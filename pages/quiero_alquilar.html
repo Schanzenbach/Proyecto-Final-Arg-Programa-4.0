@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!---Realizar PDF-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+
+    <!--Validacion-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="form-validation.js"></script>
+
+    <title> FinalTP </title>
+
+    <script src="../js/api.js"></script>
+
+</head>
+<body>
+        <div id="caja" class="card w-50 m-auto">
+            <h3 class="card-header"> Realiza tu reserva: </h3>
+
+            <div class="d-flex flex-wrap mt-2">
+                <p class="col-4 p-1 ml-5"> Selecione una zona de hospedaje: </p>
+                <select name="zona" id="hospedaje" class="form-control col-5 mx-3">
+                    <option value="0" disabled selected>Seleccione...</option>
+                    <option value="0">Palermo</option>
+                    <option value="1">La Plata</option>
+                    <option value="2">Villa Gesell</option>
+            </div>
+
+        </select>
+            <div class="d-flex flex-wrap">
+                <p class="col-4 p-1 ml-5">Selecione su dia de llegada:</p>
+                <input type="date" name="inicio" id="entrada" class="form-control col-5 mx-3">
+
+                <p class="col-4 p-1 ml-5">Selecione su dia de salida: </p>
+                <input type="date" name="final" id="salida" class="form-control col-5 mx-3">
+            </div>
+            <button onclick="consultar()" class="btn btn-primary ml-5 p-2 col-4"> Consultar Reserva </button>
+            <div class="w-100"></div>
+            <p id="respuesta" class="ml-5 mt-3"></p>
+            <p id="zona" class="invisible"> Sin definir </p>
+            <p id="precio" class="invisible"> $00 </p>
+
+            <div class="container list-group-item mt-3 mb-2 ml-2 mr-2">
+                <p class= "mt-3"> Datos del cliente: </p>
+                <form action="#" name="validacion">
+                <label for="nombre" class="ml-2 d-block">Nombre</label>
+                <input type="text" name="nombre" id="nombre" class="form-control m-2 col-10" placeholder="Nombre">
+                <label for="apellido" class="ml-2 d-block">Apellido</label>
+                <input type="text" name="apellido" id="apellido" class="form-control m-2 col-10" placeholder="Apellido">
+                <label for="email" class="ml-2 d-block">Correo Electronico</label>
+                <input type="email" name="email" id="email" class="form-control m-2 col-10" placeholder="correo@hotmail.com">
+                <label for="numero" class="ml-2 d-block">Numero de contacto</label>
+                <input type="number" name="numero" id="cel" class="form-control m-2 col-10" placeholder="11...">
+                <label for="documento" class="ml-2 d-block">Numero de documento</label>
+                <input type="number" name="documento" id="dni" class="form-control m-2 col-10" placeholder="Documento">
+                <br>
+                <button type="button" class="btn btn-primary ml-2 col-4"> Confirmar</button>
+                </form>
+            </div>
+
+        </div>
+        <div class="container list-group-item">
+            <form action="#" name="tarjeta">
+                <label class ="col-auto p-2"> Ingresa los datos de tarjeta </label>
+                <div class="d-flex flex-wrap mb-2">
+                    <label class="ml-2 col-4 text-right">Numero</label>
+                <input type="number" id="numcard" name="numcard" maxlength="5" class="d-block col-5 mb-2" placeholder="####-####-####-####">
+                            <div class="w-100"></div>
+                    <label class="ml-2 col-4 text-right">Clave</label>
+                <input type="password" id="clavecard" name="clavecard" maxlength="3" class="d-block col-2 mb-2" placeholder="###">
+                            <div class="w-100"></div>
+                    <label class="ml-2 col-4 text-right">Fecha de vencimiento</label>
+                <input type="month" id="fecha" name="fecha" class="d-block col-3 mb-2">
+                </div>
+                <button type="submit" id="confirmar" onclick="validarTarjeta()" class="btn btn-primary ml-2 d-block"> Confirmar Pago </button>
+                <p> Esta accion generara automaticamente un comprobante de pago de tipo PDF.</p>
+            </form>
+        </div>
+        
+</body>
+</html>

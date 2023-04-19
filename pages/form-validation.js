@@ -26,7 +26,7 @@ $(function() {
       messages: {
   
         nombre: "Introduzca su nombre",
-        apellido: "Introduzca su nombre",
+        apellido: "Introduzca su apellido",
         email: "Introduzca un Email",
         numero: "Introduzca un numero de contacto",
         documento: {

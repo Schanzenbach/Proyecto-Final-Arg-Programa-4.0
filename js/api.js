@@ -128,7 +128,7 @@ function cPDF(){
 
  }
 
-
+// API DOLAR EN NUESTROS LUGARES
 $.get("../pages/json/datos.json",function(data){
     let precioDia = data.lugares[0].precio;
     let url = 'https://www.dolarsi.com/api/api.php?type=valoresprincipales';

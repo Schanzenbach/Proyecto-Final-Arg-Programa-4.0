@@ -1,8 +1,8 @@
 {
    "lugares":[
-   {"nombre": "Palermo", "precio": 10, "fechaInicio" : ["2023-04-10","2023-04-25"],"fechaFinal" : ["2023-04-15", "2023-04-30"]},
-   {"nombre": "La Plata", "precio": 5, "fechaInicio" : ["2023-05-01","2023-06-12","2023-04-15"],"fechaFinal" : ["2023-05-05", "2023-06-14","2023-04-22"]},
-   {"nombre": "Villa Gesell", "precio": 8, "fechaInicio" : ["2023-04-01"],"fechaFinal" : ["2023-04-05"]}
+   {"nombre": "Palermo", "precio": 20, "fechaInicio" : ["2023-04-10","2023-04-25"],"fechaFinal" : ["2023-04-15", "2023-04-30"]},
+   {"nombre": "La Plata", "precio": 15, "fechaInicio" : ["2023-05-01","2023-06-12","2023-04-15"],"fechaFinal" : ["2023-05-05", "2023-06-14","2023-04-22"]},
+   {"nombre": "Villa Gesell", "precio": 17, "fechaInicio" : ["2023-04-01"],"fechaFinal" : ["2023-04-05"]}
    ],
    "tarjetas":[
       {"num": 12345678, "clv": 123, "fv": "2023-04"},

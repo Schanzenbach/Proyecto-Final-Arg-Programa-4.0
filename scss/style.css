@@ -11,6 +11,10 @@
   header .navbar {
     background-color: #0C151C;
   }
+  header .navbar-collapse {
+    display: flex;
+    justify-content: end;
+  }
   header .navbar-brand {
     color: #E4E5EA;
   }
@@ -31,6 +35,9 @@
   }
   header .navbar-nav a:hover {
     color: #6B99C3;
+  }
+  header .navbar-nav a:focus {
+    color: #E4E5EA;
   }
   main {
     background-color: #16354D;
@@ -187,7 +194,7 @@
     width: 60%;
   }
   main .biggest-box .bigger-box .big-container p {
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-align: justify;
   }
   main .biggest-box .bigger-box .small-container {

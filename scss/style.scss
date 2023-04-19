@@ -17,6 +17,10 @@
     header {
         .navbar{
             background-color: map-get($colors, darkest);
+            &-collapse{
+                display :flex; 
+                justify-content:end;
+            }
             &-brand{
                 color: map-get($colors, hueso);
                 &:hover{
@@ -37,6 +41,9 @@
                     color: map-get($colors, hueso);
                     &:hover{
                         color: map-get($colors, azul_clarito);
+                    }
+                    &:focus{
+                        color: map-get($colors, hueso);
                     }
                 }
             }
@@ -205,7 +212,7 @@
                     .big-container{
                         width: 60%;
                         p{
-                            font-size: 0.8rem;
+                            font-size: 1rem;
                             text-align: justify;
                         }
                     }
@@ -216,6 +223,7 @@
                             width: 100%;
                         }
                     }
+                    
             }
             
         }

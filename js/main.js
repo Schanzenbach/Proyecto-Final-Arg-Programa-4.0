@@ -42,6 +42,7 @@ $(document).ready(function() {
         let options = $('#options-input').val();
         let email = $('#email').val();
         let contacto = document.querySelector('input[name="contacto"]:checked').value;
+        console.log(contacto);
         let mensaje = $('#comments').val();
         $.ajax({
             url: 'https://reqres.in/api/users', 

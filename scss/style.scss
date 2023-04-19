@@ -1,0 +1,163 @@
+@import "./reset/reset";
+@import "./colors/colors";
+
+
+// footer {
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+// }
+
+
+@media (min-width: 320px) {
+    header {
+        .navbar{
+            background-color: map-get($colors, darkest);
+            &-brand{
+                color: map-get($colors, hueso);
+                &:hover{
+                    color: map-get($colors, hueso);
+                }
+                &:focus{
+                    color: map-get($colors, hueso)
+                }
+            }
+            span{
+                color: map-get($colors, azul_clarito);
+            }
+            &-toggler {
+                background-color: map-get($colors, hueso);
+            }
+            &-nav {
+                a {
+                    color: map-get($colors, hueso);
+                    &:hover{
+                        color: map-get($colors, azul_clarito);
+                    }
+                }
+            }
+        }
+    }
+    main {
+        .biggest-box{
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border:1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            margin-bottom: 5px;
+            .card{
+                border: none;
+                &-body{
+                    background-color: map-get($colors, darkest);
+                    width: 100%;
+                    p{
+                        color: map-get($colors, hueso);
+                        text-align: justify;
+                    }
+                    h6{
+                        color: map-get($colors, hueso);
+                    }
+                }
+            }
+        }
+        .three {
+            margin-bottom: 0px;
+        }
+        background-color: map-get($colors, azul_oscurito);
+        background-image: url('/assets/img/ondas.svg');
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        div {
+            width: 100%;
+            .carousel-container{
+                padding: 5px;
+                width: 100%;
+                .card{
+                    margin-left: auto;
+                    margin-right: auto;
+                }              
+
+            }
+            div {
+                    .big-container{
+                        width: 100%;
+                        p{
+                            color: map-get($colors, hueso);
+                            padding: 5px;
+                            font-size: 0.7rem;
+                            text-align: justify;
+                        }
+                    }
+                    .small-container{
+                        width: 100%;
+                        padding: 5px;
+                        img{
+                            border-radius: 20px;
+                            height: 50vw;
+                            width: 95vw;
+                        }
+                    }
+            }
+            
+        }
+    }
+    footer{
+        div{
+            .navbar-brand{
+                color: map-get($colors, hueso);
+                &:hover{
+                    color: map-get($colors, hueso);
+                }
+                &:focus{
+                    color: map-get($colors, hueso)
+                }
+            }
+            span{
+                color:map-get($colors, azul_clarito)
+            }
+            background-color: map-get($colors, darkest);
+
+            .h5{
+                color: map-get($colors, hueso);
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    main {
+        .two{
+            margin-left: 20%;
+        }
+        .biggest-box {
+            width: 80%;
+
+            .bigger-box {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                margin-left: 0;
+                    .big-container{
+                        width: 60%;
+                        p{
+                            font-size: 0.8rem;
+                            text-align: justify;
+                        }
+                    }
+                    .small-container{
+                        width: 40%;
+                        img{
+                            height: 400px;
+                            width: 100%;
+                        }
+                    }
+            }
+            
+        }
+    }
+}
+

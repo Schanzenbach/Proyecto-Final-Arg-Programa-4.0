@@ -1,1 +1,141 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@media (min-width: 320px) {
+  header .navbar {
+    background-color: #0C151C;
+  }
+  header .navbar-brand {
+    color: #E4E5EA;
+  }
+  header .navbar-brand:hover {
+    color: #E4E5EA;
+  }
+  header .navbar-brand:focus {
+    color: #E4E5EA;
+  }
+  header .navbar span {
+    color: #6B99C3;
+  }
+  header .navbar-toggler {
+    background-color: #E4E5EA;
+  }
+  header .navbar-nav a {
+    color: #E4E5EA;
+  }
+  header .navbar-nav a:hover {
+    color: #6B99C3;
+  }
+  main {
+    background-color: #16354D;
+    background-image: url("/assets/img/ondas.svg");
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+  main .biggest-box {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    margin-bottom: 5px;
+  }
+  main .biggest-box .card {
+    border: none;
+  }
+  main .biggest-box .card-body {
+    background-color: #0C151C;
+    width: 100%;
+  }
+  main .biggest-box .card-body p {
+    color: #E4E5EA;
+    text-align: justify;
+  }
+  main .biggest-box .card-body h6 {
+    color: #E4E5EA;
+  }
+  main .three {
+    margin-bottom: 0px;
+  }
+  main div {
+    width: 100%;
+  }
+  main div .carousel-container {
+    padding: 5px;
+    width: 100%;
+  }
+  main div .carousel-container .card {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main div div .big-container {
+    width: 100%;
+  }
+  main div div .big-container p {
+    color: #E4E5EA;
+    padding: 5px;
+    font-size: 0.7rem;
+    text-align: justify;
+  }
+  main div div .small-container {
+    width: 100%;
+    padding: 5px;
+  }
+  main div div .small-container img {
+    border-radius: 20px;
+    height: 50vw;
+    width: 95vw;
+  }
+  footer div {
+    background-color: #0C151C;
+  }
+  footer div .navbar-brand {
+    color: #E4E5EA;
+  }
+  footer div .navbar-brand:hover {
+    color: #E4E5EA;
+  }
+  footer div .navbar-brand:focus {
+    color: #E4E5EA;
+  }
+  footer div span {
+    color: #6B99C3;
+  }
+  footer div .h5 {
+    color: #E4E5EA;
+  }
+}
+@media (min-width: 768px) {
+  main .two {
+    margin-left: 20%;
+  }
+  main .biggest-box {
+    width: 80%;
+  }
+  main .biggest-box .bigger-box {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 0;
+  }
+  main .biggest-box .bigger-box .big-container {
+    width: 60%;
+  }
+  main .biggest-box .bigger-box .big-container p {
+    font-size: 0.8rem;
+    text-align: justify;
+  }
+  main .biggest-box .bigger-box .small-container {
+    width: 40%;
+  }
+  main .biggest-box .bigger-box .small-container img {
+    height: 400px;
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */

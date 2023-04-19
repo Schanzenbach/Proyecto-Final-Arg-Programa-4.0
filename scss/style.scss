@@ -11,6 +11,9 @@
 
 
 @media (min-width: 320px) {
+    body{
+        height: 100vh;
+    }
     header {
         .navbar{
             background-color: map-get($colors, darkest);
@@ -73,7 +76,7 @@
         background-position: bottom;
         div {
             width: 100%;
-            .carousel-container{
+            .carousel-container-0{
                 padding: 5px;
                 width: 100%;
                 .card{
@@ -126,6 +129,64 @@
             }
         }
     }
+    // ------------------------------------------------------------- Nuestros lugares------------------------------------------
+    .drop-menu-byme{
+
+        min-height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .carousel-container{
+            max-height: 300px;
+            .carousel-item {
+                max-height: 200px;
+                img{
+                    border-radius: 10px;
+                    height: 200px;
+                    width: 500px;
+                }
+            }
+        .price-container{
+            text-align: center;
+            p{
+                color: map-get($colors, hueso);
+            }
+        }
+        }
+        .place-container{
+            margin: 10px 5%;
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border:1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            .place-name{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 70%;
+                margin-top: 5px;
+                h5{
+                    color: map-get($colors, hueso);
+                }
+            }
+            .icon-container{
+                button{
+                    background-color: map-get($colors, hueso);
+                    height: 90%;
+                    width: 90%;
+                    margin-right: 2px;
+                    border-radius: 20px;
+                }
+                width:30%
+            }
+        }
+    }
 }
 
 @media (min-width: 768px) {
@@ -158,6 +219,22 @@
             }
             
         }
+        // ------------------------places--------------
+        .drop-menu-byme{
+            min-height: 64vh;
+        }
+        .carousel-container{
+            min-height: 500px;
+            .carousel-item {
+                min-height: 400px;
+                img{
+                    margin: 0 5%;
+                    min-height: 400px;
+                    max-width: 90%;
+                }
+            }
+        }
     }
 }
+
 

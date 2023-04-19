@@ -145,7 +145,7 @@
         align-items: center;
         justify-content: center;
         .carousel-container{
-            max-height: 300px;
+            max-height: 550px;
             .carousel-item {
                 max-height: 200px;
                 img{
@@ -157,7 +157,15 @@
         .price-container{
             text-align: center;
             p{
+                padding: 5px;
+                text-align: justify;
                 color: map-get($colors, hueso);
+            }
+            button{
+                a{
+                    color: map-get($colors, hueso);
+                    text-decoration: none;
+                }
             }
         }
         }
@@ -236,7 +244,7 @@
             min-height: 64vh;
         }
         .carousel-container{
-            min-height: 500px;
+            min-height: 600px;
             .carousel-item {
                 min-height: 400px;
                 img{

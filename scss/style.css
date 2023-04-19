@@ -128,7 +128,7 @@
     justify-content: center;
   }
   .drop-menu-byme .carousel-container {
-    max-height: 300px;
+    max-height: 550px;
   }
   .drop-menu-byme .carousel-container .carousel-item {
     max-height: 200px;
@@ -142,7 +142,13 @@
     text-align: center;
   }
   .drop-menu-byme .carousel-container .price-container p {
+    padding: 5px;
+    text-align: justify;
     color: #E4E5EA;
+  }
+  .drop-menu-byme .carousel-container .price-container button a {
+    color: #E4E5EA;
+    text-decoration: none;
   }
   .drop-menu-byme .place-container {
     margin: 10px 5%;
@@ -211,7 +217,7 @@
     min-height: 64vh;
   }
   main .carousel-container {
-    min-height: 500px;
+    min-height: 600px;
   }
   main .carousel-container .carousel-item {
     min-height: 400px;

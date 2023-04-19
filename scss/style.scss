@@ -194,6 +194,10 @@
             }
         }
     }
+    //-----------------Contact----------------------
+    .contact-container {
+        color: map-get($colors, hueso)
+    }
 }
 
 @media (min-width: 768px) {
